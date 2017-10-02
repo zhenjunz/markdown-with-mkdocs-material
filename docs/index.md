@@ -1,3 +1,5 @@
+# cyent笔记 - markdown语法详解(基于mkdocs-material)
+
 ## **本文主题**
 
 ---
@@ -9,6 +11,8 @@
 ## **mkdocs-material是什么**
 
 ---
+
+符合google material ui规范的静态文档网站生成器，使用markdown进行文档书写
 
 **mkdocs**
 
@@ -24,7 +28,7 @@
 
 **mkdocs-material**
 
-- 是python模块，本文阐述的均是该模块功能
+- 是python模块，本文阐述的均是该模块官方推荐的markdown语法
 
 - 符合google material ui规范的mkdocs自定义主题
 
