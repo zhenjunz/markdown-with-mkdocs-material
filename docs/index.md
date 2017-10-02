@@ -1,4 +1,4 @@
-# cyent笔记 - markdown语法详解(基于mkdocs-material)
+# markdown语法详解(基于mkdocs-material)
 
 ## **本文主题**
 
@@ -24,13 +24,11 @@
 
 - 内置mkdocs风格、readthedocs风格的主题，并支持自定义主题
 
-- 支持调用python模块做语法及渲染的扩展
+- 支持调用python模块实现语法及渲染的扩展
 
 **mkdocs-material**
 
-- 是python模块，本文阐述的均是该模块官方推荐的markdown语法
-
-- 符合google material ui规范的mkdocs自定义主题
+- python模块，符合google material ui规范的mkdocs自定义主题
 
 - 针对特定语法、功能做了渲染优化
 
@@ -40,7 +38,7 @@
 
 最佳实践: 建议仅使用[mkdocs-material](http://squidfunk.github.io/mkdocs-material/)官网支持的语法、功能，这样不会有渲染方面的异常，除非自己对mkdocs、mkdocs-material、html、js、css有一定的了解。
 
-本文所有阐述的语法均是mkdocs-material支持的。
+本文所有阐述的语法均是mkdocs-material官网推荐的。
 
 ## **写在前面**
 
