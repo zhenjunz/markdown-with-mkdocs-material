@@ -1532,7 +1532,11 @@ print text
 <li>- codehilite(linenums=false) 不显示行号</li>
 </ul>
 <div class="admonition warning">
-<p>若codehilite(linenums=true)，4个空格代码块方式也会被自动加上行号</p>
+<p>若codehilite(linenums=true)，4个空格的代码块方式也会被自动加上行号</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">指定代码块显示行号</p>
+<p><strong>因此，如果想全局默认不显示行号，而指定代码块显示行号，可以在mkdocs.yml里指定linenums=false，然后想显示行号的代码块用linenums="1"</strong></p>
 </div>
 <h3 id="3"><strong>参数3. 指定第几行背景高亮</strong><a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
 <hr />
@@ -1571,6 +1575,7 @@ print text1 + text2
 </td></tr></table>
 
 <div class="admonition warning">
+<p class="admonition-title">强制显式行号</p>
 <p>当代码块指定了linenums后，即使mkdocs.yml里linenums=false，也会自动显示行号</p>
 <p><strong>因此，如果想全局默认不显示行号，而指定代码块显示行号，可以在mkdocs.yml里指定linenums=false，然后想显示行号的代码块用linenums="1"</strong></p>
 </div>
