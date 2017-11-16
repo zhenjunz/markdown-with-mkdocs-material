@@ -103,7 +103,10 @@ print text
 - \- codehilite(linenums=false) 不显示行号
 
 !!! warning ""
-    若codehilite(linenums=true)，4个空格代码块方式也会被自动加上行号
+    若codehilite(linenums=true)，4个空格的代码块方式也会被自动加上行号
+
+!!! warning "指定代码块显示行号"
+	**因此，如果想全局默认不显示行号，而指定代码块显示行号，可以在mkdocs.yml里指定linenums=false，然后想显示行号的代码块用linenums="1"**
 
 ### **参数3. 指定第几行背景高亮**
 
@@ -143,7 +146,7 @@ text2 = "world!"
 print text1 + text2
 ```
 
-!!! warning ""
+!!! warning "强制显式行号"
     当代码块指定了linenums后，即使mkdocs.yml里linenums=false，也会自动显示行号
 
 	**因此，如果想全局默认不显示行号，而指定代码块显示行号，可以在mkdocs.yml里指定linenums=false，然后想显示行号的代码块用linenums="1"**
