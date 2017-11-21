@@ -187,6 +187,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>https://cyent.github.io/markdown-with-mkdocs-material//appendix/level/</loc>
+     <lastmod>2017-11-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
