@@ -96,14 +96,29 @@
             "title": "4. 引用"
         }, 
         {
+            "location": "/syntax/table/", 
+            "text": "示例\n\n\n\n\n| 字段1 | 字段2 | 字段3 |\n| :-- | :--: | --: |\n| A1 | B1 | C1 |\n| A2 | B2 | C2 |\n\n\n\n\n效果\n\n\n\n\n\n\n\n\n字段1\n\n\n字段2\n\n\n字段3\n\n\n\n\n\n\n\n\n\n\nA1\n\n\nB1\n\n\nC1\n\n\n\n\n\n\nA2\n\n\nB2\n\n\nC2\n\n\n\n\n\n\n\n\n详解\n\n\n\n\n至少由3行组成\n\n\n\n\n\n\n第1行：字段名\n\n\n| 字段1 | 字段2 | 字段3 |\n\n\n\n\n\n\n\n\n第2行：\b设置对齐\n\n\n| :-- | :--: | --: |\n\n\n\n\n分别表示为左对齐，居中对齐，又对齐。另外，也可以不设置对齐，即不写冒号，但这样不好维护，因此建议都设置对齐\n\n\n\n\n\n\n第3行开始：正文\n\n\n| 内容1 | 内容2 | 内容3 |\n\n\n\n\n\n\n\n\n\n\n空格不可忽略\n\n\n|字段1|字段2|字段3|\n\n\n\n\n这样是有问题的，空格1个，也可以多个，但不能不写\n\n\n\n\n\n\n最左边和最右边的|可省略\n\n\n| 字段1 | 字段2 | 字段3 |\n\n\n\n\n也可以写成这样\n\n\n字段1 | 字段2 | 字段3\n\n\n\n\n不仅是第1行，每一行都可以这么省略", 
+            "title": "5. 表格"
+        }, 
+        {
+            "location": "/syntax/table/#_1", 
+            "text": "| 字段1 | 字段2 | 字段3 |\n| :-- | :--: | --: |\n| A1 | B1 | C1 |\n| A2 | B2 | C2 |  效果     字段1  字段2  字段3      A1  B1  C1    A2  B2  C2", 
+            "title": "示例"
+        }, 
+        {
+            "location": "/syntax/table/#_2", 
+            "text": "至少由3行组成    第1行：字段名  | 字段1 | 字段2 | 字段3 |    第2行：\b设置对齐  | :-- | :--: | --: |  分别表示为左对齐，居中对齐，又对齐。另外，也可以不设置对齐，即不写冒号，但这样不好维护，因此建议都设置对齐    第3行开始：正文  | 内容1 | 内容2 | 内容3 |     空格不可忽略  |字段1|字段2|字段3|  这样是有问题的，空格1个，也可以多个，但不能不写    最左边和最右边的|可省略  | 字段1 | 字段2 | 字段3 |  也可以写成这样  字段1 | 字段2 | 字段3  不仅是第1行，每一行都可以这么省略", 
+            "title": "详解"
+        }, 
+        {
             "location": "/syntax/code_inline/", 
             "text": "在一行内要标记的文本前后各加一个 \n`\n\n\nAAA`BBB`CCC\n\n\n\n\n效果：\n\n\nAAA\nBBB\nCCC\n\n\n注: 支持代码高亮\n，详见\"\n行内代码高亮\n\"", 
-            "title": "5.1. 行内"
+            "title": "6.1. 行内"
         }, 
         {
             "location": "/syntax/code_block/", 
             "text": "4个空格\n\n\n\n\n在每行前面加上4个空格\n\n\n    text = \nHello, world!\n\n    print text\n\n\n\n\n效果\n\n\ntext = \nHello, world!\n\nprint text\n\n\n\n\n\n3个 `\n\n\n\n\n```text\ntext = \nHello, world!\n\nprint text\n```\n\n\n\n\n\n效果\n\n\ntext = \nHello, world!\n\nprint text\n\n\n\n\n注1: 支持代码高亮\n，详见\"\n区块代码高亮\n\"\n\n\n注2: 如果代码区块上方是列表，如\n无序列表\n或\n有序列表\n，那么4个空格不会被解析为代码区块，而是被解析为一个普通缩进", 
-            "title": "5.2. 区块"
+            "title": "6.2. 区块"
         }, 
         {
             "location": "/syntax/code_block/#4", 
@@ -118,17 +133,17 @@
         {
             "location": "/syntax/code_highlight/", 
             "text": "高亮部分详见\n代码高亮\n章节", 
-            "title": "5.3. 高亮"
+            "title": "6.3. 高亮"
         }, 
         {
             "location": "/syntax/font_stress/", 
             "text": "依赖模块: pymdownx.betterem(smart_enable=all)\n\n\n*text* 或 _text_ 斜体\n\n**text** 或 __text__ 粗体\n\n***text*** 或 ___text___ 粗斜体\n\n\n\n\n效果\n\n\ntext\n 斜体\n\n\ntext\n 粗体\n\n\ntext\n 粗斜体\n\n\n\n\n避免冲突\n\n\n这个扩展和markdown.extensions.smartstrong扩展冲突，不能同时载入，前者替代了后者，实现更好的效果。", 
-            "title": "6.1. 斜体,粗体,粗斜体"
+            "title": "7.1. 斜体,粗体,粗斜体"
         }, 
         {
             "location": "/syntax/font_updown/", 
             "text": "上标\n\n\n\n\n依赖模块: pymdownx.caret\n\n\n10^2^\n\n\n\n\n效果\n\n\n10\n2\n\n\n针对英文描述第几的上标，可以\n1st\n这种方式(依赖模块: pymdownx.smartsymbols)\n\n\n\n\n\n\n\n\n用法\n\n\n效果\n\n\n\n\n\n\n\n\n\n\n1st 2nd 3rd\n\n\n1\nst\n 2\nnd\n 3\nrd\n\n\n\n\n\n\n1^st^ 2^nd^ 3^rd^\n\n\n1\nst\n 2\nnd\n 3\nrd\n\n\n\n\n\n\n\n\n下标\n\n\n\n\n依赖模块: pymdownx.tilde\n\n\nH~2~O\n\n\n\n\n效果\n\n\nH\n2\nO", 
-            "title": "6.2. 上标,下标"
+            "title": "7.2. 上标,下标"
         }, 
         {
             "location": "/syntax/font_updown/#_1", 
@@ -143,7 +158,7 @@
         {
             "location": "/syntax/font_underline/", 
             "text": "不带高亮\n\n\n\n\n依赖模块: pymdownx.caret\n\n\n^^underline me^^\n\n\n\n\n效果\n\n\nunderline me\n\n\n背景高亮\n\n\n\n\n详见\n高亮章节下划线部分", 
-            "title": "6.3. 下划线"
+            "title": "7.3. 下划线"
         }, 
         {
             "location": "/syntax/font_underline/#_1", 
@@ -158,7 +173,7 @@
         {
             "location": "/syntax/font_line/", 
             "text": "不带高亮\n\n\n\n\n依赖模块: pymdownx.critic\n\n\nThis is ~~is~~ a test.\n\n\n\n\n效果\n\n\nThis is \nis\n a test.\n\n\n背景高亮\n\n\n\n\n详见\n高亮章节横线部分", 
-            "title": "6.4. 横线"
+            "title": "7.4. 横线"
         }, 
         {
             "location": "/syntax/font_line/#_1", 
@@ -173,32 +188,32 @@
         {
             "location": "/syntax/font_underline_line/", 
             "text": "只有高亮形式,详见\n高亮章节下划线+横线部分", 
-            "title": "6.5. 下划线+横线"
+            "title": "7.5. 下划线+横线"
         }, 
         {
             "location": "/syntax/list_noseq/", 
             "text": "使用\n*\n、\n+\n、或\n-\n标记无序列表，下面仅以\n-\n作为示例，\n\n\n- 第一项\n- 第二项\n- 第三项\n\n\n\n\n注: 标记后面最少有一个 \n空格\n 或 \n制表符\n。若不在引用区块中，必须和前方段落之间存在空行。\n\n\n效果\n\n\n\n\n第一项\n\n\n第二项\n\n\n第三项", 
-            "title": "7.1. 无序列表"
+            "title": "8.1. 无序列表"
         }, 
         {
             "location": "/syntax/list_seq/", 
             "text": "有序列表的标记方式是将上述的符号换成数字,并辅以\n.\n\n\n1. 第一项   \n2. 第二项    \n3. 第三项    \n\n\n\n\n效果\n\n\n\n\n第一项\n\n\n第二项\n\n\n第三项", 
-            "title": "7.2. 有序列表"
+            "title": "8.2. 有序列表"
         }, 
         {
             "location": "/syntax/list_task/", 
             "text": "依赖模块: pymdownx.tasklist\n\n\n用法: \n- [ ]\n 或 \n- [x]\n，其中\n[ ]\n表示不打勾，\n[x]\n表示打勾，\n-\n可以用\n+\n或\n*\n替代\n\n\n- [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit\n- [x] Nulla lobortis egestas semper\n- [x] Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est\n- [ ] Vestibulum convallis sit amet nisi a tincidunt\n    - [x] In hac habitasse platea dictumst\n    - [x] In scelerisque nibh non dolor mollis congue sed et metus\n    - [x] Sed egestas felis quis elit dapibus, ac aliquet turpis mattis\n    - [ ] Praesent sed risus massa\n- [x] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque\n- [ ] Nulla vel eros venenatis, imperdiet enim id, faucibus nisi\n\n\n\n\n效果\n\n\n\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit\n\n\n Nulla lobortis egestas semper\n\n\n Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est\n\n\n Vestibulum convallis sit amet nisi a tincidunt\n\n\n In hac habitasse platea dictumst\n\n\n In scelerisque nibh non dolor mollis congue sed et metus\n\n\n Sed egestas felis quis elit dapibus, ac aliquet turpis mattis\n\n\n Praesent sed risus massa\n\n\n\n\n\n\n Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque\n\n\n Nulla vel eros venenatis, imperdiet enim id, faucibus nisi", 
-            "title": "7.3. 任务列表"
+            "title": "8.3. 任务列表"
         }, 
         {
             "location": "/syntax/cutline/", 
             "text": "分割线使用三个或以上\n*\n，也可以使用\n-\n和\n_\n，下面仅以\n-\n作为示例\n\n\n---\n\n\n\n\n效果", 
-            "title": "8. 分割线"
+            "title": "9. 分割线"
         }, 
         {
             "location": "/syntax/link_normal/", 
             "text": "行内式\n\n\n\n\n[example](http://www.example.com/ \ntitle\n)\n\n\n\n\n效果\n\n\nexample\n\n\n鼠标悬停在链接上可以看到\"title\"字样\n\n\n参考式\n\n\n\n\n当一个页面里多次调用相同链接时，这种方法更适用:\n\n\n[example][索引]\n\n...\n\n[索引]: http://www.example.com/ \ntitle\n\n\n\n\n\n注意: \n[索引]: http://www.example.com/ \ntitle\n可以写在任意地方，通常习惯于放在markdown本页文档最下方\n\n\n效果\n\n\nexample\n\n\n鼠标悬停在链接上可以看到\"title\"字样", 
-            "title": "9.1. 普通链接"
+            "title": "10.1. 普通链接"
         }, 
         {
             "location": "/syntax/link_normal/#_1", 
@@ -213,32 +228,32 @@
         {
             "location": "/syntax/link_auto/", 
             "text": "依赖模块: pymdownx.magiclink\n\n\n当识别到HTML、FTP、Email地址时候会自动转为超链接，如\n\n\nhttp://www.example.cpm/\n\n\n\n\n效果\n\n\nhttp://www.example.com/\n\n\n经测试，至少支持以下几种自动链接\n\n\nhttp://www.example.com/    \nhttps://www.example.com/\nftp://www.example.com/\nwww.example.com\nuser@example.com", 
-            "title": "9.2. 自动链接"
+            "title": "10.2. 自动链接"
         }, 
         {
             "location": "/syntax/link_anchor/", 
             "text": "英文叫Permalinks，是toc扩展模块的一个功能\n\n\n依赖模块: toc\n\n\n默认值: toc(permalink=false)\n\n\n笔者推荐值: toc(permalink=true)\n\n\n参数设置:\n\n\n\n\ntoc(permalink=true)\n\n\n\n\n点击锚点或者跳转至锚点后会自动在锚点处显示图标或文本，并自动固定在该位置，刷新页面后也会自动回到该位置，效果如下：\n\n\n\n\n\n\ntoc(permalink=false)\n\n\n\n\n看不到锚点处的图标或文本，但跳转至锚点处后自动固定在该位置，刷新页面后也会自动回到该位置\ntoc(permalink=false)等同于注释掉这个扩展，效果均如下：\n\n\n\n\n\n\ntoc(permalink=自定义名)\n\n\n\n\n可以支持自定义名，比如toc(permalinks=hello)，效果如下：", 
-            "title": "9.3. 锚点提示"
+            "title": "10.3. 锚点提示"
         }, 
         {
             "location": "/syntax/image_inline/", 
             "text": "添加图片的形式和链接相似，只需在链接的基础上前方加一个\n!\n\n\n![alt](图片地址 \ntitle\n)\n\n\n\n\n如\n\n\n![hello](/img/test_icon.png \ntitle\n)\n\n\n\n\n效果\n\n\n\n\n鼠标悬停在图标上可以看到\"title\"字样", 
-            "title": "10.1. 行内式"
+            "title": "11.1. 行内式"
         }, 
         {
             "location": "/syntax/image_index/", 
             "text": "当一个页面里多次调用相同图片时，这种方法更适用:\n\n\n![alt][索引]\n\n[索引]: 图片地址 \ntitle\n\n\n\n\n\n注意: \n[索引]: 图片地址 \ntitle\n可以写在任意地方，通常习惯于放在markdown本页文档最下方\n\n\n如\n\n\n![alt][test icon]\n\n...\n\n[test icon]: /img/test_icon.png \ntitle\n\n\n\n\n\n效果\n\n\n\n\n鼠标悬停在图标上可以看到\"title\"字样", 
-            "title": "10.2. 参考式"
+            "title": "11.2. 参考式"
         }, 
         {
             "location": "/syntax/escape/", 
             "text": "推荐依照如下顺序进行转义尝试\n\n\n1⃣️ 使用转义符号\n\\\n\n\n2⃣️ 使用\n行内代码\n或\n区块代码\n方式\n\n\n3⃣️ 在行内代码或区块代码里再使用转义符号\n\\\n\n\n4⃣️ html标签:\n\n\ncode\n需要转义的内容\n/code\n\n\n\n\n\n\n如果上面都行不通，只有最后一招，截图并\n插入图片\n\n\n推荐的截图方式\n把要转义的文本复制到微信聊天对话输入框里，然后用任意截图工具对着输入框截图，这样截图出来的带有灰色背景，即代码块那种灰色背景（会让人觉得是使用代码块方式在表述）。\n注意上下文\n相同的符号，会因为上下文环境被mkdocs认为是不同的意思，因此有时会遇到一些符号在有的上下文环境里可以使用或转义，有的就不行，比如跟在列表之后和跟着标题之后是不同上下文环境。\n我的案例\n可以上github查看本文档中转义章节的markdown源文件，其中大量使用了转义", 
-            "title": "11. 转义"
+            "title": "12. 转义"
         }, 
         {
             "location": "/syntax/highlight_code/", 
             "text": "行内代码高亮\n\n\n\n\n依赖模块: pymdownx.inlinehilite\n\n\n使用shebang可以在一行文本里实现代码高亮\n\n\n`#!python print \nHello, world!\n`或`:::python print \nHello, world!\n`\n\n\n\n\n效果\n\n\nprint\n \nHello, world!\n或\nprint\n \nHello, world!\n\n\n\n\n开头不能有空格，如果有空格的话，就会被认为是正文\n\n\n` #!python print \nHello, world!\n`\n\n\n效果\n\n#!python print \nHello, world!\n\n\n` :::python print \nHello, world!\n`\n\n\n效果\n\n:::python print \nHello, world!\n\n\n\n\n区块代码高亮\n\n\n\n\n用法\n\n\n\n\n依赖模块: codehilite\n\n\n写法1: 3个`\n\n\n```python\ntext = \nHello, world!\n\nprint text\n```\n\n\n\n\n\n效果\n\n\ntext\n \n=\n \nHello, world!\n\n\nprint\n \ntext\n\n\n\n\n\n写法2: 4个空格+shebang\n\n    #!/usr/bin/python\n    text = \nHello, world!\n\n    print text\n\n\n\n效果\n\n\n#!/usr/bin/python\n\n\ntext\n \n=\n \nHello, world!\n\n\nprint\n \ntext\n\n\n\n\n\n\n\n\n支持434种格式\n\n\ncodehilite是基于pygments实现高亮的，支持434种格式，详见\n支持代码高亮的语言\n\n\n若指定了不存在的格式，则等同于text，不做任何高亮渲染\n\n\n\n\n若不想使用高亮，用text，如：\n\n\n```text\ntext = \nHello, world!\n\nprint text\n```\n\n\n\n\n\n效果\n\n\ntext = \nHello, world!\n\nprint text\n\n\n\n\n参数1. 自动猜测语言\n\n\n\n\n在mkdocs.yml里markdown_extensions部分设置如下\n\n\n\n\n- codehilite(guess_lang=false) 关闭猜测，若不指定语言，则关闭高亮\n\n\n- codehilite(guess_lang=true) 开启猜测，若不指定语言，则自动猜测\n\n\n\n\n参数2. 显示行号\n\n\n\n\n在mkdocs.yml里markdown_extensions部分设置\n\n\n\n\n- codehilite(linenums=true) 显示行号\n\n\n- codehilite(linenums=false) 不显示行号\n\n\n\n\n\n\n若codehilite(linenums=true)，4个空格的代码块方式也会被自动加上行号\n\n\n\n\n\n\n指定代码块显示行号\n\n\n因此，如果想全局默认不显示行号，而指定代码块显示行号，可以在mkdocs.yml里指定linenums=false，然后想显示行号的代码块用linenums=\"1\"\n\n\n\n\n参数3. 指定第几行背景高亮\n\n\n\n\n在mkdocs.yml里不用额外设置\n\n\n```python hl_lines=\n2 4\n\ntext1 = \nHello, \n\ntext2 = \nworld!\n\nprint text1 + text2\n```\n\n\n\n\n\n效果\n\n\ntext1\n \n=\n \nHello, \n\n\ntext2\n \n=\n \nworld!\n\n\nprint\n \ntext1\n \n+\n \ntext2\n\n\n\n\n\n参数4. 指定行号从多少开始编号\n\n\n\n\n```python linenums=\n2\n\ntext1 = \nHello, \n\ntext2 = \nworld!\n\nprint text1 + text2\n```\n\n\n\n\n\n效果\n\n\n2\n3\n4\ntext1\n \n=\n \nHello, \n\n\ntext2\n \n=\n \nworld!\n\n\nprint\n \ntext1\n \n+\n \ntext2\n\n\n\n\n\n\n\n\n\n强制显式行号\n\n\n当代码块指定了linenums后，即使mkdocs.yml里linenums=false，也会自动显示行号\n\n\n因此，如果想全局默认不显示行号，而指定代码块显示行号，可以在mkdocs.yml里指定linenums=false，然后想显示行号的代码块用linenums=\"1\"\n\n\n\n\n注意：代码块linenums参数不会影响hl_lines，即无论linenums指定从多少行开始编号，hl_lines实际都以行号从1开始编号来找到对应行进行背景高亮渲染，如：\n\n\n```python linenums=\n2\n hl_lines=\n3\n\ntext1 = \nHello, \n\ntext2 = \nworld!\n\nprint text1 + text2\n```\n\n\n\n\n\n效果\n\n\n2\n3\n4\ntext1\n \n=\n \nHello, \n\n\ntext2\n \n=\n \nworld!\n\n\nprint\n \ntext1\n \n+\n \ntext2", 
-            "title": "12.1. 代码高亮"
+            "title": "13.1. 代码高亮"
         }, 
         {
             "location": "/syntax/highlight_code/#_1", 
@@ -278,7 +293,7 @@
         {
             "location": "/syntax/highlight_background/", 
             "text": "黄色\n\n\n\n\n2个模块均提供了相似的效果\n\n\n模块1: pymdownx.mark\n\n\n==hello world==\n\n\n\n\n效果\n\n\nhello world\n\n\n模块2: pymdownx.critic\n\n\n\n\n效果\n\n\nhello world\n\n\n但这2个模块也有区别\n:\n\n\n区别1:\n\n\n\n\npymdownx.mark渲染出的html是\np\nmark\nhello world\n/mark\n/p\n\n\npymdownx.critic渲染出的html是\np\nmark class=\ncritic\nhello world\n/mark\n/p\n\n\n\n\n区别2:\n\n\n\n\npymdownx.mark不支持块背景高亮\n\n\n\n\npymdownx.critic支持块背景高亮\n\n\n用法:\n\n\n\n\n效果:\n\n\n\n\n\n\nAAA\n\n\nBBB\n\n\n\n\n\n\nCCC\n\n\n\n\n\n\n支持嵌套，详见\n黄色区块嵌套高亮代码示例\n\n\n\n\n\n\n绿色(下划线)\n\n\n\n\n表示插入文字\n\n\n依赖模块: pymdownx.critic\n\n\n\n\n效果\n\n\nHello, \nmy\n world!\n\n\n支持嵌套，详见\n绿色区块嵌套高亮代码示例\n\n\n红色(横线)\n\n\n\n\n表示删除文字\n\n\n依赖模块: pymdownx.tidle\n\n\n\n\n效果\n\n\ndelete me\n\n\n支持嵌套，详见\n红色区块嵌套高亮代码示例\n\n\n绿色+红色(下划线+横线)\n\n\n\n\n表示替换文字\n\n\n2种实现方式:\n\n\n\n\n\n\n先使用红色(横线)，再使用绿色(下划线)\n\n\n\n\n\n\n\n\n使用专门的语法，依赖模块pymdownx.tidle\n\n\n\n\n\n\n\n\n这2种方式效果完全一致，包括实际看到的样式和html都是相同的\n\n\nHello, \nmy\nour\n world!\n\n\n支持嵌套，详见\n绿色+红色区块嵌套高亮代码示例\n\n\n灰色\n\n\n\n\n表示注解\n\n\n依赖模块: pymdownx.critic\n\n\n\n\n效果\n\n\nThis is a test\nWhat is it a test of?\n.\n\n\n注意:\n\n\n\n\n只支持单行用法，不支持区块用法\n\n\n无法与代码高亮结合，包括行内代码高亮和区块代码高亮", 
-            "title": "12.2. 背景高亮"
+            "title": "13.2. 背景高亮"
         }, 
         {
             "location": "/syntax/highlight_background/#_1", 
@@ -308,42 +323,42 @@
         {
             "location": "/syntax/note_main/", 
             "text": "写注解使用，依赖模块: admonition\n\n\n支持多种样式，如带有标题、无标题、空标题，还支持折叠式(常用于FAQ)\n\n\n支持多种颜色风格，包括警告提示、错误提示、成功提示等11种风格", 
-            "title": "13.1. 介绍"
+            "title": "14.1. 介绍"
         }, 
         {
             "location": "/syntax/note_full/", 
             "text": "!!! note \n标题\n\n    内容\n\n\n\n\n效果\n\n\n\n\n标题\n\n\n内容", 
-            "title": "13.2. 完整格式"
+            "title": "14.2. 完整格式"
         }, 
         {
             "location": "/syntax/note_empty-title/", 
             "text": "!!! note \n\n    内容\n\n\n\n\n效果\n\n\n\n\n内容", 
-            "title": "13.3. 空标题"
+            "title": "14.3. 空标题"
         }, 
         {
             "location": "/syntax/note_none-title/", 
             "text": "!!! note\n    内容\n\n\n\n\n效果\n\n\n\n\nNote\n\n\n内容\n\n\n\n\n注意: 无标题时类型首字母会被大写，如上面note被大写成Note", 
-            "title": "13.4. 无标题"
+            "title": "14.4. 无标题"
         }, 
         {
             "location": "/syntax/note_none-type/", 
             "text": "无类型，则默认为note\n\n\n注意这个时候标题必须写英文，并且首字母会被自动转成大写:\n\n\n!!! title\n    内容\n\n\n\n\n相当于\n\n\n!!! note \nTitle\n\n    内容\n\n\n\n\n效果\n\n\n\n\nTitle\n\n\n内容", 
-            "title": "13.5. 无类型"
+            "title": "14.5. 无类型"
         }, 
         {
             "location": "/syntax/note_details/", 
             "text": "把!!!改成???，注意此时标题不能为空，否则样式有问题\n\n\n适用场景: 折叠特别适用于FAQ，即标题里写问题，内容里写答案\n\n\n依赖模块: pymdownx.details\n\n\n??? note \n标题\n\n    内容\n\n\n\n\n效果\n\n\n标题\n内容\n注意: 折叠中的内容在折叠未打开时候通过ctrl-f是搜索不出来的，但可以通过页面上方的Search栏里搜到", 
-            "title": "13.6. 折叠"
+            "title": "14.6. 折叠"
         }, 
         {
             "location": "/syntax/note_style/", 
             "text": "有11种样式，每一种样式都支持多种关键字，比如note可以用seealso替代，summary可以用tldr替代\n\n\n!!! note \nnote, seealso\n\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\n!!! summary \nsummary, tldr\n\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\n!!! info \ninfo, todo\n\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\n!!! tip \ntip, hint, important\n\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\n!!! success \nsuccess, check, done\n\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\n!!! question \nquestion, help, faq\n\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\n!!! warning \nwarning, caution, attention\n\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\n!!! failure \nfailure, fail, missing\n\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\n!!! danger \ndanger, error\n\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\n!!! bug \nbug\n\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\n!!! quote \nquote, cite\n\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\n效果\n\n\n\n\nnote, seealso\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\n\n\nsummary, tldr\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\n\n\ninfo, todo\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\n\n\ntip, hint, important\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\n\n\nsuccess, check, done\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n\n\n\n\n\n\nquestion, help, faq\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\n\n\nwarning, caution, attention\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\n\n\nfailure, fail, missing\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\n\n\ndanger, error\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\n\n\nbug\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\n\n\nquote, cite\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.", 
-            "title": "13.7. 11种颜色样式"
+            "title": "14.7. 11种颜色样式"
         }, 
         {
             "location": "/syntax/note_nest/", 
             "text": "注解标题和内容支持多种样式\n\n\n\n\n例1. 标题里使用斜体\n\n\n!!! note \n*标题e*\n\n    内容\n\n\n\n\n\n\n标题\n\n\n内容\n\n\n\n\n例2. 内容里使用h1-h6\n\n\n!!! note \n标题\n\n    # h1\n    ## h2\n    ### h3\n\n\n\n\n\n\n注解嵌套代码块\n\n\n\n\n详见\n注解嵌套代码块\n章节\n\n\n注解嵌套注解\n\n\n\n\n详见\n注解嵌套注解\n章节", 
-            "title": "13.8. 嵌套"
+            "title": "14.8. 嵌套"
         }, 
         {
             "location": "/syntax/note_nest/#_1", 
@@ -363,32 +378,32 @@
         {
             "location": "/syntax/footnote/", 
             "text": "依赖模块: footnotes\n\n\n第一步. 插入引用\n\n\nLorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]\n\n\n\n\n\n第二步. 插入内容\n\n\n[^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n[^2]:\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\n\n\n\n可以看到，上面脚注1内容是单行方式，脚注2内容是多行方式\n\n\n\n\n效果\n\n\nLorem ipsum\n1\n dolor sit amet, consectetur adipiscing elit.\n2\n\n\n\n\n注意\n\n\n\n\n\n\n不一定要用[^1]，也可以用自定义关键字，比如[^mykey]，但这样下面也要改为[^mykey]，也可以支持空格，比如[^my key]（当然后面也要[^my key]:\n\n\n\n\n\n\n无论脚注标签写的是什么（即[^1]或者[^mykey]，在展示脚注标签和展示脚注内容时候都是自动用数字从1开始累加标记，而不是自己写的内容）\n\n\n\n\n\n\n[^1]: 脚注内容无论写在.md中的任何位置，在展示时候都是自动位于文档的最下方，并且会自动添加---这样一个横线\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.", 
-            "title": "14. 脚注"
+            "title": "15. 脚注"
         }, 
         {
             "location": "/syntax/meta/", 
             "text": "依赖模块：meta\n\n\nmkdocs支持(实际是python markdown支持)的元信息内容，会被自动转为对应的html，目前支持以下4种meta\n\n\ntitle: Lorem ipsum dolor sit amet\ndescription: Nullam urna elit, malesuada eget finibus ut, ac tortor.\npath: path/to/file\nsource: file.js\n\n\n\n\n\n注意:\n\n\n\n\n\n\n要写在markdown文档的最上方\n\n\n\n\n\n\n写完后要加一个空行\n\n\n\n\n\n\n会被自动翻译成\n\n\nhead\n\n\nmeta name=\ndescription\n content=\nNullam urna elit, malesuada eget finibus ut, ac tortor.\n\n\ntitle\nLorem ipsum dolor sit amet\n/title\n\n\n/head\n\n以及\nbody\n中某个位置会看到\na href=\n/path/to/file/file.js\n title=\nfile.js\n class=\nmd-source-file\n\n\n\n\n\n\n其中path和source的效果:", 
-            "title": "15. 元信息"
+            "title": "16. 元信息"
         }, 
         {
             "location": "/syntax/math_main/", 
             "text": "用于TeX数学公式的展示，使用之前要先在docs/里创建javascripts目录，并在目录中放置extra.js\n\n\n依赖模块: pymdownx.arithmatex", 
-            "title": "16.1. 介绍"
+            "title": "17.1. 介绍"
         }, 
         {
             "location": "/syntax/math_js/", 
             "text": "先在docs里创建js目录，并在js目录中放置extra.js：\n\n\nwindow\n.\nMathJax\n \n=\n \n{\n\n  \ntex2jax\n:\n \n{\n\n    \ninlineMath\n:\n \n[\n \n[\n\\\\(\n,\n\\\\)\n]\n \n],\n\n    \ndisplayMath\n:\n \n[\n \n[\n\\\\[\n,\n\\\\]\n]\n \n]\n\n  \n},\n\n  \nTeX\n:\n \n{\n\n    \nTagSide\n:\n \nright\n,\n\n    \nTagIndent\n:\n \n.8em\n,\n\n    \nMultLineWidth\n:\n \n85%\n,\n\n    \nequationNumbers\n:\n \n{\n\n      \nautoNumber\n:\n \nAMS\n,\n\n    \n},\n\n    \nunicode\n:\n \n{\n\n      \nfonts\n:\n \nSTIXGeneral,\nArial Unicode MS\n\n    \n}\n\n  \n},\n\n  \ndisplayAlign\n:\n \nleft\n,\n\n  \nshowProcessingMessages\n:\n \nfalse\n,\n\n  \nmessageStyle\n:\n \nnone\n\n\n};\n\n\n\n\n\n然后在mkdocs.yml里添加如下内容，用于导入js\n\n\nextra_javascript\n:\n\n    \n-\n \njs/extra.js\n\n    \n-\n \nhttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML", 
-            "title": "16.2. 导入js"
+            "title": "17.2. 导入js"
         }, 
         {
             "location": "/syntax/math_usage/", 
             "text": "行内写法有2种: \n$...$\n 和 \n\\(...\\)\n\n\n区块写法有3种: \n$$...$$\n, \n\\[...\\]\n, 和 \n\\begin{}...\\end{}\n\n\n具体用法详见:\n\n\n\n\n\n\nhttps://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference\n\n\n\n\n\n\nhttp://www.andy-roberts.net/writing/latex/mathematics_1\n\n\n\n\n\n\nhttp://www.andy-roberts.net/writing/latex/mathematics_2\n\n\n\n\n\n\n此处仅举个例子(因为begin end方式我还不够了解)：\n\n\n$$\np(x|y) = \\frac{p(y|x)p(x)}{p(y)}\n$$\n\n\n\n\n效果\n\n\n\\[\np(x|y) = \\frac{p(y|x)p(x)}{p(y)}\n\\]\n$p(x|y) = \\frac{p(y|x)p(x)}{p(y)}$\n\n\n\n\n效果\n\n\n\\(p(x|y) = \\frac{p(y|x)p(x)}{p(y)}\\)", 
-            "title": "16.3. 用法"
+            "title": "17.3. 用法"
         }, 
         {
             "location": "/syntax/emoji_main/", 
             "text": "什么是emoji\n\n\n\n\nemoji是日本在无线通信中所使用的视觉情感符号，已被unicode采纳，当前unicode包含了非常多的emoji图标，每一次unicode更新都会发布新的emoji图标。只要操作系统支持unicode，就能在任意使用unicode编码的地方看到漂亮的彩色图标，比如文本、mysql表里、网页。\n\n\nemoji现状\n\n\n\n\n虽然unicode官网可以查到所有emoji图标，但并未提供一个便利的图标分类查询和使用方法。因此就有一些第三方emoji厂商将部分emoji图标，制作成不同格式、不同尺寸(例如64x64 PNG、128x128 PNG或SVG等格式)的图片放入自己的CDN库。然后将这些CDN图片以免费或付费方式对外提供。\n\n\n如何获得emoji\n\n\n\n\n根据使用需求分为2种:\n\n\n\n\n\n\n不满足于unicode的emoji图标，希望更好看，并且尺寸可选，那么就使用第三方emoji厂商库，推荐使用EmojiOne的png图库，分为免费和付费，其中免费的图库已足够满足一般性使用需求，如果想使用svg，免费的只有EmojiOne-2.2.7以内版本，最新的svg都是要付费的。使用方法是在文档里用 \n:短名\n 来让mkdocs自动匹配并渲染为\n标签\n\n\n举例说明2.2.7与高版本区别\n如果用的 \n:短名:\n 是2.2.7包含的，那么图标能正常显示，否则显示不出来\n比如：\nhttps://cdn.jsdelivr.net/emojione/assets/svg/1f600.svg\n 这个是2.2.7就有的，访问这个url可以看到图标\nhttps://cdn.jsdelivr.net/emojione/assets/svg/1f92e.svg\n 这个是2.2.7之后才有的，需要付费才能获得图标，未付费直接访问会得到报错：\nhttps://cdn.jsdelivr.net/emojione/assets/3.1/png/64/1f92e.png\n 这个是png，不属于付费部分，访问这个url可以看到图标\n因此推荐的最佳入门实践应当是首选png。\n\n\n\n\n能够接受unicode的emoji图标，就简单了，直接将图标复制粘贴到文本里即可\n\n\n\n\n\n\n这2种方法并不冲突，可以在一个markdown文本里混合使用", 
-            "title": "17.1. 介绍"
+            "title": "18.1. 介绍"
         }, 
         {
             "location": "/syntax/emoji_main/#emoji", 
@@ -408,7 +423,7 @@
         {
             "location": "/syntax/emoji_principle/", 
             "text": "本文中主要介绍mkdocs依赖pymdownx.emoji进行匹配、渲染，因此下面的说明均是关于pymdownx.emoji。\n\n\npymdownx支持3个主流的emoji厂商：Gemoji（github.com做的）、EmojiOne（第三方的，分为免费版、付费版、战略合作版）、Twemoji（twitter做的），pymdownx官方推荐用EmojiOne，默认也是EmojiOne\n\n\n有2个关键参数\n\n\n\n\n\n\n\n\nemoji_index，选择emoji厂商，默认为EmojiOne\n\n\n\n\n\n\nemoji_generator，选择厂商对应的图片格式，默认为to_png\n\n\n\n\n\n\ngenerator有3类\n\n\n\n\nto_png/to_svg\n:\n\n\n\n\nmarkdown在渲染时候，其中的 \n:短名:\n 根据emoji_index(即Gemoji/EmojiOne/Twemoji)被映射为相应的unicode码\n\n\nunicode码被转为emoji_index对应的图片CDN地址(Gemoji/EmojiOne/Twemoji都有各自的CDN)\n\n\n渲染成html时候图片地址被写入\n标签\n\n\n\n\nto_png_sprite/to_svg_sprite\n: 暂不了解\n\n\nto_alt\n:\n\n\n\n\nmarkdown在渲染时候，其中的 \n:短名:\n 根据emoji_index(即Gemoji/EmojiOne/Twemoji)被映射为相应的unicode码\n\n\n渲染成html时候unicode码被直接写入\n标签\n\n\n\n\n\n\nto_alt效果等同于直接将emoji图标复制到markdown文档中", 
-            "title": "17.2. 工作原理"
+            "title": "18.2. 工作原理"
         }, 
         {
             "location": "/syntax/emoji_principle/#2", 
@@ -423,82 +438,82 @@
         {
             "location": "/syntax/emoji_usage/", 
             "text": "通过在markdown里使用 \n:短名:\n，可以在渲染出的html里展现emoji图片\n\n\n依赖模块: pymdownx.emoji\n\n\n使用步骤:\n\n\n\n\n\n\nmkdocs.yml里配置:\n\n\n-\n \npymdownx.emoji\n:\n\n    \nemoji_generator\n:\n \n!!python/name:pymdownx.emoji.to_png\n\n\n\n\n\n建议使用to_png，如果使用to_svg会有部分图片因为未付费导致无法显示\n\n\n\n\n\n\n浏览器打开\nhttps://www.emojicopy.com/\n(emojione官方推出的emoji查询网站，虽然并非全部emoji，但也是目前找到的相对最全，并且分类清楚，使用方便的emoji查询网站)，将鼠标悬停在图标上方一会，会出现对应的全名，比如\n\n\n\n\n\n\n\n\n记录下这个全名，比如这里叫做grinning face\n\n\n\n\n\n\n点击进入附录里的\nemojione全名短名映射表\n，在里面查找对应的短名\n\n\n\n\n\n\n在markdown里使用该短名\n\n\n\n\n\n\n\n\n最省事做法: 直接复制emoji图标\n\n\n无需mkdocs.yml做任何配置，只要是emoji图标(是图标不是图片)，无论是输入法自带的emoji图标，还是\nhttps://www.emojicopy.com/\n上的emoji图标，都可以直接复制粘贴到markdown文档里即可。比如这个笑脸😄就来自我的输入法，可以自行复制到markdown文档里测试。\n\n\n而且这种方式适用于所有markdown编辑器。", 
-            "title": "17.3. 最佳实践"
+            "title": "18.3. 最佳实践"
         }, 
         {
             "location": "/syntax/symbol/", 
             "text": "依赖模块: pymdownx.smartsymbols\n\n\n\n\n\n\n\n\n用法\n\n\n效果\n\n\n\n\n\n\n\n\n\n\n(tm)\n\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n\n(r)\n\n\n\n\n\n\n\n\nc/o\n\n\n\n\n\n\n\n\n+/-\n\n\n\n\n\n\n\n\n--\n\n\n\n\n\n\n\n\n--\n\n\n\n\n\n\n\n\n--\n\n\n\n\n\n\n\n\n=/=\n\n\n\n\n\n\n\n\n1/4 3/5\n\n\n \n\n\n\n\n\n\n1st 2nd 3rd\n\n\n1\nst\n 2\nnd\n 3\nrd", 
-            "title": "18. 特殊符号"
+            "title": "19. 特殊符号"
         }, 
         {
             "location": "/syntax/nest_main/", 
             "text": "几乎每种具有行内、区块的功能模块都能自身及相互之间多层嵌套，本文无法一一阐述，因此仅举几个例子说明", 
-            "title": "19.1. 介绍"
+            "title": "20.1. 介绍"
         }, 
         {
             "location": "/syntax/nest_note_note/", 
             "text": "!!! note\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n    !!! warning\n        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n        nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n        massa, nec semper lorem quam in massa.\n\n\n\n\n效果\n\n\n\n\nNote\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\nWarning\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.", 
-            "title": "19.2. 注解-注解"
+            "title": "20.2. 注解-注解"
         }, 
         {
             "location": "/syntax/nest_list_list/", 
             "text": "- aaa\n    - bbb\n\n\n\n\n效果\n\n\n\n\naaa\n\n\nbbb", 
-            "title": "19.3. 列表-列表"
+            "title": "20.3. 列表-列表"
         }, 
         {
             "location": "/syntax/nest_quote_quote/", 
             "text": "区块引用  \n\n 嵌套引用   \n\n\n\n\n效果\n\n\n\n\n区块引用  \n\n\n\n\n嵌套引用", 
-            "title": "19.4. 引用-引用"
+            "title": "20.4. 引用-引用"
         }, 
         {
             "location": "/syntax/nest_note_code/", 
             "text": "依赖模块: pymdownx.superfences\n\n\n!!! note\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n    ```python\n    text1 = \nHello, \n\n    text2 = \nworld!\n\n    print text1 + text2\n    ```\n\n\n\n\n效果\n\n\n\n\nNote\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\ntext1\n \n=\n \nHello, \n\n\ntext2\n \n=\n \nworld!\n\n\nprint\n \ntext1\n \n+\n \ntext2", 
-            "title": "19.5. 注解-代码块"
+            "title": "20.5. 注解-代码块"
         }, 
         {
             "location": "/syntax/nest_list_code/", 
             "text": "以下3种效果相同:\n\n\n一. 不缩进，无空行\n\n\n- list1\n```python\ntext1 = \nHello, \n\ntext2 = \nworld!\n\nprint text1 + text2\n```\n\n\n\n\n\n二. 缩进，无空行\n\n\n- list1\n    ```python\n    text1 = \nHello, \n\n    text2 = \nworld!\n\n    print text1 + text2\n    ```\n\n\n\n\n\n三. 缩进，有空行\n\n\n- list1\n\n    ```python\n    text1 = \nHello, \n\n    text2 = \nworld!\n\n    print text1 + text2\n    ```\n\n\n\n\n\n效果均如下\n\n\n\n\n\n\nlist1\n\n\ntext1\n \n=\n \nHello, \n\n\ntext2\n \n=\n \nworld!\n\n\nprint\n \ntext1\n \n+\n \ntext2\n\n\n\n\n\n\n\n\n\n注意: 不能无缩进却有空行，如下面这样是有问题的，可以自行测试:\n\n\n- list1\n\n```python\ntext1 = \nHello, \n\ntext2 = \nworld!\n\nprint text1 + text2\n```", 
-            "title": "19.6. 列表-代码块"
+            "title": "20.6. 列表-代码块"
         }, 
         {
             "location": "/syntax/nest_quote_code/", 
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n\n nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n\n massa, nec semper lorem quam in massa.\n\n ```go\n  import \nfmt\n\n  func main() {\n     fmt.Println(\nHello, world\n)\n  }\n  ```\n\n\n\n\n效果\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\nimport\n \nfmt\n\n\nfunc\n \nmain\n()\n \n{\n\n   \nfmt\n.\nPrintln\n(\nHello, world\n)\n\n\n}\n\n\n\n\n\n\n可以看出，用\n时候，要每行的\n内容缩进对齐，不过，如果是一个代码块的话，只需要第一个\n即可\n\n\n但要注意, 上面这种方法不能有空行，如果有空行就会被认为终止，比如：\n\n ```go\n  import \nfmt\n\n  func main() {\n      fmt.Println(\nHello, world\n)\n\n      fmt.Println(\nlast\n)\n  }\n  ```\n\n\n\n\n\n要解决这个问题，就要在空行之后的新行再用\n表示未中断，比如：\n\n ```go\n  import \nfmt\n\n  func main() {\n      fmt.Println(\nHello, world\n)\n\n\n     fmt.Println(\nlast\n)\n  }\n  ```\n\n\n\n\n\nimport\n \nfmt\n\n\nfunc\n \nmain\n()\n \n{\n\n    \nfmt\n.\nPrintln\n(\nHello, world\n)\n\n\n    \nfmt\n.\nPrintln\n(\nlast\n)\n\n\n}", 
-            "title": "19.7. 引用-代码块"
+            "title": "20.7. 引用-代码块"
         }, 
         {
             "location": "/syntax/nest_yellow_code/", 
             "text": "效果\n\n\nprint\n \nHello, world!\n\n\n\n\nprint\n \nHello, world!\n\n\n\n\n\n\nprint\n \nHello, world!", 
-            "title": "19.8. 黄色区块-代码"
+            "title": "20.8. 黄色区块-代码"
         }, 
         {
             "location": "/syntax/nest_green_code/", 
             "text": "效果\n\n\nprint\n \nHello, world!\n\n\n\n\nprint\n \nHello, world!\n\n\n\n\n\n\nprint\n \nHello, world!", 
-            "title": "19.9. 绿色区块-代码"
+            "title": "20.9. 绿色区块-代码"
         }, 
         {
             "location": "/syntax/nest_red_code/", 
             "text": "效果\n\n\nprint\n \nHello, world!\n\n\n\n\nprint\n \nHello, world!\n\n\n\n\n\n\nprint\n \nHello, world!", 
-            "title": "19.10. 红色区块-代码"
+            "title": "20.10. 红色区块-代码"
         }, 
         {
             "location": "/syntax/nest_greenred_code/", 
             "text": "效果\n\n\nprint\n \nHello, world!\nprint\n \nHello, our world!\n\n\n\n\nprint\n \nHello, my world!\n\n\n\n\n\n\n\nprint\n \nHello, our world!", 
-            "title": "19.11. 绿接红区块-代码"
+            "title": "20.11. 绿接红区块-代码"
         }, 
         {
             "location": "/syntax/nest_note_list_quote/", 
             "text": "!!! note \ntest\n\n    - aaa\n\n        \n bbb\n\n\n\n\n\n效果\n\n\n\n\ntest\n\n\n\n\n\n\naaa\n\n\n\n\nbbb", 
-            "title": "19.12. 注解-列表-引用"
+            "title": "20.12. 注解-列表-引用"
         }, 
         {
             "location": "/syntax/nest_list_list_quote/", 
             "text": "- aaa\n\n    - bbb\n\n        \n ccc\n\n\n\n\n效果\n\n\n\n\n\n\naaa\n\n\n\n\n\n\nbbb\n\n\n\n\nccc", 
-            "title": "19.13. 列表-列表-引用"
+            "title": "20.13. 列表-列表-引用"
         }, 
         {
             "location": "/syntax/nest_quote_quote_code/", 
             "text": "aaa\n\n bbb\n\n ```python\n    text1 = \nHello, \n\n    text2 = \nworld!\n\n    print text1 + text2\n    ```\n\n\n\n\n\n效果\n\n\n\n\naaa\n\n\n\n\nbbb\n\n\n\n\ntext1\n \n=\n \nHello, \n\n\ntext2\n \n=\n \nworld!\n\n\nprint\n \ntext1\n \n+\n \ntext2", 
-            "title": "19.14. 引用-引用-代码"
+            "title": "20.14. 引用-引用-代码"
         }, 
         {
             "location": "/appendix/pygments/", 
