@@ -133,4 +133,5 @@ pages:
         - 3. 添加百度统计: appendix/baidu_tongji.md
         - 4. 配色: appendix/color.md
         - 5. 模块介绍: appendix/module.md
+        - 6. mkdocs层级关系: appendix/level.md
     - 五. 使用建议: recommend.md
