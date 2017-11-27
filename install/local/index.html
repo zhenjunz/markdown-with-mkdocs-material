@@ -1,6 +1,9 @@
 
+
+
+
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -16,9 +19,22 @@
         <meta name="author" content="cyent">
       
       
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <meta name="lang:clipboard.copy" content="复制">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.1">
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.0">
     
     
       
@@ -26,19 +42,16 @@
       
     
     
-      <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
-    
-    
-      <link rel="stylesheet" href="../../assets/stylesheets/application-a20f419c8e.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.5d3fffba.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-23f75ab9c7.palette.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.fbd935c7.css">
       
     
     
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
       
-        
-        
-        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -48,10 +61,11 @@
     
   </head>
   
-  
-  
-  
-    <body data-md-color-primary="blue-grey" data-md-color-accent="pink">
+    
+    
+    
+      <body data-md-color-primary="blue-grey" data-md-color-accent="pink">
+    
   
     <svg class="md-svg">
       <defs>
@@ -71,7 +85,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://cyent.github.io/markdown-with-mkdocs-material/" title="markdown语法详解(基于mkdocs-material) - cyent笔记" class="md-header-nav__button md-logo">
           
-            <i class="md-icon md-icon--home"></i>
+            <i class="md-icon"></i>
           
         </a>
       </div>
@@ -79,36 +93,37 @@
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
-        <span class="md-flex__ellipsis md-header-nav__title">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             
-              
-                <span class="md-header-nav__parent">
-                  二. 安装
-                </span>
-              
+              <span class="md-header-nav__topic">
+                markdown语法详解(基于mkdocs-material) - cyent笔记
+              </span>
+              <span class="md-header-nav__topic">
+                1. 本地环境搭建
+              </span>
             
-            1. 本地环境搭建
           
-        </span>
+        </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" required placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
       <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
-          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
-            Type to start searching
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -116,6 +131,7 @@
     </div>
   </div>
 </div>
+          
         
       </div>
       
@@ -127,7 +143,7 @@
   
 
 
-  <a href="https://github.com/cyent/markdown-with-mkdocs-material" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/cyent/markdown-with-mkdocs-material/" title="前往 Github 仓库" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -149,6 +165,8 @@
     
     <div class="md-container">
       
+        
+      
       
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
@@ -159,11 +177,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <div class="md-nav__button md-logo">
+    <span class="md-nav__button md-logo">
       
-        <i class="md-icon md-icon--home"></i>
+        <i class="md-icon"></i>
       
-    </div>
+    </span>
     markdown语法详解(基于mkdocs-material) - cyent笔记
   </label>
   
@@ -174,7 +192,7 @@
   
 
 
-  <a href="https://github.com/cyent/markdown-with-mkdocs-material" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/cyent/markdown-with-mkdocs-material/" title="前往 Github 仓库" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -249,7 +267,7 @@
   
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
+    <label class="md-nav__title" for="toc">目录</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
@@ -263,6 +281,47 @@
   <a href="#mkdocs-material" title="mkdocs-material部署" class="md-nav__link">
     mkdocs-material部署
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="安装" class="md-nav__link">
+    安装
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="初始化项目" class="md-nav__link">
+    初始化项目
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="修改主题" class="md-nav__link">
+    修改主题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="添加扩展" class="md-nav__link">
+    添加扩展
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs" title="mkdocs服务启动" class="md-nav__link">
+    mkdocs服务启动
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1331,6 +1390,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../appendix/search/" title="7. 支持中文搜索" class="md-nav__link">
+      7. 支持中文搜索
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../appendix/yml/" title="8. mkdocs.yml范例" class="md-nav__link">
+      8. mkdocs.yml范例
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1375,7 +1458,7 @@
   
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
+    <label class="md-nav__title" for="toc">目录</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
@@ -1389,6 +1472,47 @@
   <a href="#mkdocs-material" title="mkdocs-material部署" class="md-nav__link">
     mkdocs-material部署
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="安装" class="md-nav__link">
+    安装
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="初始化项目" class="md-nav__link">
+    初始化项目
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="修改主题" class="md-nav__link">
+    修改主题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="添加扩展" class="md-nav__link">
+    添加扩展
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs" title="mkdocs服务启动" class="md-nav__link">
+    mkdocs服务启动
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1405,6 +1529,8 @@
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
+                
+                  <a href="https://github.com/cyent/markdown-with-mkdocs-material/edit/master/docs/install/local.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                   <h1>1. 本地环境搭建</h1>
@@ -1429,12 +1555,12 @@
 <tr>
 <td align="left">mkdocs</td>
 <td align="left">mkdocs</td>
-<td align="left">0.16.3</td>
+<td align="left">0.17.2</td>
 </tr>
 <tr>
 <td align="left">mkdocs-material</td>
 <td align="left">material</td>
-<td align="left">1.10.1</td>
+<td align="left">2.2.0</td>
 </tr>
 <tr>
 <td align="left">Markdown</td>
@@ -1444,7 +1570,7 @@
 <tr>
 <td align="left">pymdown-extensions</td>
 <td align="left">pymdownx</td>
-<td align="left">4.0</td>
+<td align="left">4.5</td>
 </tr>
 </tbody>
 </table>
@@ -1452,27 +1578,24 @@
 </ul>
 <h2 id="mkdocs-material"><strong>mkdocs-material部署</strong><a class="headerlink" href="#mkdocs-material" title="Permanent link">&para;</a></h2>
 <hr />
-<ul>
-<li>
-<p>安装</p>
+<h3 id="_2"><strong>安装</strong><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span>pip install mkdocs mkdocs-material
 </pre></div>
 
-</li>
-<li>
-<p>初始化项目</p>
+<details class="note"><summary>若下载慢，可更换安装源为豆瓣</summary><div class="codehilite"><pre><span></span>sudo pip install --trusted-host pypi.douban.com -i http://pypi.douban.com/simple/ mkdocs mkdocs-material
+</pre></div>
+</details><h3 id="_3"><strong>初始化项目</strong><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span>mkdocs new my-project
 </pre></div>
 
-</li>
-<li>
-<p>修改主题, mkdocs.yml里添加:</p>
-<div class="codehilite"><pre><span></span>theme: material
+<h3 id="_4"><strong>修改主题</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>mkdocs.yml里添加:</p>
+<div class="codehilite"><pre><span></span>theme:
+  name: material
 </pre></div>
 
-</li>
-<li>
-<p>添加扩展, mkdocs.yml里添加:</p>
+<h3 id="_5"><strong>添加扩展</strong><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>mkdocs.yml里添加:</p>
 <div class="codehilite"><pre><span></span>markdown_extensions:
     - admonition
     - codehilite(guess_lang=false,linenums=false)
@@ -1496,7 +1619,7 @@
     - pymdownx.tilde
 </pre></div>
 
-</li>
+<ul>
 <li>
 <p>[可选]<a href="../../appendix/baidu_tongji/">添加百度统计</a></p>
 </li>
@@ -1504,16 +1627,16 @@
 <p>[可选]<a href="../../appendix/color/">改变页面配色</a></p>
 </li>
 <li>
-<p>mkdocs服务启动</p>
+<p>[推荐]<a href="../../appendix/search/">支持中文搜索</a></p>
+</li>
+</ul>
+<p>可以查看我的mkdocs.yml范例，详见<a href="../../appendix/yml/">mkdocs.yml范例</a></p>
+<h3 id="mkdocs"><strong>mkdocs服务启动</strong><a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span>cd my-project
 mkdocs serve
 </pre></div>
 
-</li>
-<li>
-<p>通过浏览器打开http://127.0.0.1:8000/，查看效果</p>
-</li>
-</ul>
+<p>通过浏览器打开 <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> 查看效果</p>
                 
                   
                 
@@ -1539,7 +1662,7 @@ mkdocs serve
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                  Previous
+                  后退
                 </span>
                 一. 介绍
               </span>
@@ -1551,7 +1674,7 @@ mkdocs serve
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                  Next
+                  前进
                 </span>
                 2. 发布至GitHub Pages
               </span>
@@ -1569,9 +1692,9 @@ mkdocs serve
       <div class="md-footer-copyright">
         
         powered by
-        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        <a href="http://www.mkdocs.org">MkDocs</a>
         and
-        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+        <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
       </div>
       
@@ -1591,10 +1714,24 @@ mkdocs serve
       
     </div>
     
-      <script src="../../assets/javascripts/application-f3ab9e5ff8.js"></script>
+      <script src="../../assets/javascripts/application.6cdc17f0.js"></script>
       
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              <script src="../../assets/javascripts/lunr/lunr.jp.js"></script>
+            
+          
+          
+        
       
-      <script>app.initialize({url:{base:"../.."}})</script>
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
       
         <script src="../../js/extra.js"></script>
       
