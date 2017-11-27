@@ -57,7 +57,6 @@ extra_javascript:
     - 'js/baidu-tongji.js'
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
-
 pages:
     - 一. 介绍: index.md
     - 二. 安装:
@@ -138,5 +137,7 @@ pages:
         - 4. 配色: appendix/color.md
         - 5. 模块介绍: appendix/module.md
         - 6. mkdocs层级关系: appendix/level.md
+        - 7. 支持中文搜索: appendix/search.md
+        - 8. mkdocs.yml范例: appendix/yml.md
     - 五. 使用建议: recommend.md
     - 六. 联系方式: contact.md
