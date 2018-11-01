@@ -83,7 +83,7 @@ markdown_extensions:
 
 - [推荐][支持中文搜索](./../appendix/search/)
 
-可以查看我的mkdocs.yml范例，详见[mkdocs.yml范例](/appendix/yml/)
+可以查看我的mkdocs.yml范例，详见[mkdocs.yml范例](../../../appendix/yml/)
 
 ### **mkdocs服务启动**
 

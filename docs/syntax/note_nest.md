@@ -33,4 +33,4 @@
 
 ---
 
-详见[注解嵌套注解](./../syntax/nest_note_note/)章节
+详见[注解嵌套注解](/syntax/nest_note_note/)章节
