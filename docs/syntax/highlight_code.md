@@ -64,9 +64,8 @@ print text
 	text = "Hello, world!"
 	print text
 
-
 !!! note "支持434种格式"
-    codehilite是基于pygments实现高亮的，支持434种格式，详见[支持代码高亮的语言](http://127.0.0.1:8001/appendix/pygments/)
+    codehilite是基于pygments实现高亮的，支持434种格式，详见[支持代码高亮的语言](./../../appendix/pygments/)
 
     若指定了不存在的格式，则等同于text，不做任何高亮渲染
 
