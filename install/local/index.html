@@ -1626,6 +1626,7 @@
 <div class="codehilite"><pre><span></span>mkdocs new my-project
 </pre></div>
 
+<p>会生成my-project目录，进入该目录里，可以看到默认放置了一些文件，包括mkdocs.yaml，这是主配置文件</p>
 <h3 id="_4"><strong>修改主题</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>mkdocs.yml里添加:</p>
 <div class="codehilite"><pre><span></span>theme:
@@ -1635,26 +1636,30 @@
 <h3 id="_5"><strong>添加扩展</strong><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>mkdocs.yml里添加:</p>
 <div class="codehilite"><pre><span></span>markdown_extensions:
-    - admonition
-    - codehilite(guess_lang=false,linenums=false)
-    - toc(permalink=true)
-    - footnotes
-    - meta
-    - def_list
-    - pymdownx.arithmatex
-    - pymdownx.betterem(smart_enable=all)
-    - pymdownx.caret
-    - pymdownx.critic
-    - pymdownx.details
-    - pymdownx.emoji:
-        emoji_generator: !!python/name:pymdownx.emoji.to_png
-    - pymdownx.inlinehilite
-    - pymdownx.magiclink
-    - pymdownx.mark
-    - pymdownx.smartsymbols
-    - pymdownx.superfences
-    - pymdownx.tasklist
-    - pymdownx.tilde
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
 </pre></div>
 
 <ul>
@@ -1670,7 +1675,7 @@
 </ul>
 <p>可以查看我的mkdocs.yml范例，详见<a href="/appendix/yml/">mkdocs.yml范例</a></p>
 <h3 id="mkdocs"><strong>mkdocs服务启动</strong><a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>cd my-project
+<div class="codehilite"><pre><span></span># 在my-project目录里执行
 mkdocs serve
 </pre></div>
 
