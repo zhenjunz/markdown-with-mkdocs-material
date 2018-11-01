@@ -16,4 +16,4 @@ This is ~~is~~ a test.
 
 ---
 
-详见[高亮章节横线部分](/syntax/highlight_background/#_3)
+详见[高亮章节横线部分](./../syntax/highlight_background/#_3)

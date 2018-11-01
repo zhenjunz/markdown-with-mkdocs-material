@@ -15,11 +15,11 @@
 
 2. 浏览器打开[https://www.emojicopy.com/](https://www.emojicopy.com/)(emojione官方推出的emoji查询网站，虽然并非全部emoji，但也是目前找到的相对最全，并且分类清楚，使用方便的emoji查询网站)，将鼠标悬停在图标上方一会，会出现对应的全名，比如
 
-	![](/img/emoji_ex1.png)
+	![](./../img/emoji_ex1.png)
 
 3. 记录下这个全名，比如这里叫做grinning face
 
-4. 点击进入附录里的[emojione全名短名映射表](/appendix/emoji_shortname/)，在里面查找对应的短名
+4. 点击进入附录里的[emojione全名短名映射表](./../appendix/emoji_shortname/)，在里面查找对应的短名
 
 5. 在markdown里使用该短名
 
