@@ -34,6 +34,8 @@ pip install mkdocs mkdocs-material
 mkdocs new my-project
 ```
 
+会生成my-project目录，进入该目录里，可以看到默认放置了一些文件，包括mkdocs.yaml，这是主配置文件
+
 ### **修改主题**
 
 mkdocs.yml里添加:
@@ -49,26 +51,30 @@ mkdocs.yml里添加:
 
 ```text
 markdown_extensions:
-    - admonition
-    - codehilite(guess_lang=false,linenums=false)
-    - toc(permalink=true)
-    - footnotes
-    - meta
-    - def_list
-    - pymdownx.arithmatex
-    - pymdownx.betterem(smart_enable=all)
-    - pymdownx.caret
-    - pymdownx.critic
-    - pymdownx.details
-    - pymdownx.emoji:
-        emoji_generator: !!python/name:pymdownx.emoji.to_png
-    - pymdownx.inlinehilite
-    - pymdownx.magiclink
-    - pymdownx.mark
-    - pymdownx.smartsymbols
-    - pymdownx.superfences
-    - pymdownx.tasklist
-    - pymdownx.tilde
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
 ```
 
 - [可选][添加百度统计](/appendix/baidu_tongji/)
@@ -82,7 +88,7 @@ markdown_extensions:
 ### **mkdocs服务启动**
 
 ```text
-cd my-project
+# 在my-project目录里执行
 mkdocs serve
 ```
 
