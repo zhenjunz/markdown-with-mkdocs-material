@@ -63,13 +63,13 @@ extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
 nav:
-    - 一. 介绍: index.md
-    - 二. 安装:
-        - 1. 本地环境搭建: install/local.md
-        - 2. 发布至GitHub Pages: install/github-pages.md
-        - 3. 发布至自己的HTTP Server: install/http-server.md
-    - 三. 语法:
-        - 1. 语法总览: syntax/main.md
-        - 2. 标题: syntax/headline.md
-        - 3. 段落: syntax/paragraph.md
+  - 一. 介绍: index.md
+  - 二. 安装:
+      - 1. 本地环境搭建: install/local.md
+      - 2. 发布至GitHub Pages: install/github-pages.md
+      - 3. 发布至自己的HTTP Server: install/http-server.md
+  - 三. 语法:
+      - 1. 语法总览: syntax/main.md
+      - 2. 标题: syntax/headline.md
+      - 3. 段落: syntax/paragraph.md
 ```
