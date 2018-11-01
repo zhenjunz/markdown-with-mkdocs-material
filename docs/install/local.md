@@ -77,11 +77,11 @@ markdown_extensions:
   - pymdownx.tilde
 ```
 
-- [可选][添加百度统计](./../appendix/baidu_tongji/)
+- [可选][添加百度统计](./../../appendix/baidu_tongji/)
 
-- [可选][改变页面配色](./../appendix/color/)
+- [可选][改变页面配色](./../../appendix/color/)
 
-- [推荐][支持中文搜索](./../appendix/search/)
+- [推荐][支持中文搜索](./../../appendix/search/)
 
 可以查看我的mkdocs.yml范例，详见[mkdocs.yml范例](./../../appendix/yml/)
 

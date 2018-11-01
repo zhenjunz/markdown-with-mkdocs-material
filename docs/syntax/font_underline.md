@@ -16,4 +16,4 @@
 
 ---
 
-详见[高亮章节下划线部分](./../syntax/highlight_background/#_2)
+详见[高亮章节下划线部分](./../../syntax/highlight_background/#_2)

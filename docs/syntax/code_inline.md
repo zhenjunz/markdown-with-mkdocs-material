@@ -8,4 +8,4 @@ AAA`BBB`CCC
 
 AAA`BBB`CCC
 
-**注: 支持代码高亮**，详见"[行内代码高亮](./../syntax/highlight_code/#_1)"
+**注: 支持代码高亮**，详见"[行内代码高亮](./../../syntax/highlight_code/#_1)"

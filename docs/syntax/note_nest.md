@@ -27,10 +27,10 @@
 
 ---
 
-详见[注解嵌套代码块](./../syntax/nest_note_code/)章节
+详见[注解嵌套代码块](./../../syntax/nest_note_code/)章节
 
 ## **注解嵌套注解**
 
 ---
 
-详见[注解嵌套注解](/syntax/nest_note_note/)章节
+详见[注解嵌套注解](./../../syntax/nest_note_note/)章节

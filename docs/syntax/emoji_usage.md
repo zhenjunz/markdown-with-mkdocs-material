@@ -19,7 +19,7 @@
 
 3. 记录下这个全名，比如这里叫做grinning face
 
-4. 点击进入附录里的[emojione全名短名映射表](./../appendix/emoji_shortname/)，在里面查找对应的短名
+4. 点击进入附录里的[emojione全名短名映射表](./../../appendix/emoji_shortname/)，在里面查找对应的短名
 
 5. 在markdown里使用该短名
 
