@@ -21,7 +21,7 @@
     ### h3
 ```
 
-![](../img/note_content_h1.png)
+![](../../../img/note_content_h1.png)
 
 ## **注解嵌套代码块**
 
