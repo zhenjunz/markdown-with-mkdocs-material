@@ -42,7 +42,7 @@
     
     
       
-        <title>1. 本地环境搭建 - 基于mkdocs-material搭建个人静态博客(含支持的markdown语法)</title>
+        <title>1. 本地环境搭建(含入门配置) - 基于mkdocs-material搭建个人静态博客(含支持的markdown语法)</title>
       
     
     
@@ -130,7 +130,7 @@
                 基于mkdocs-material搭建个人静态博客(含支持的markdown语法)
               </span>
               <span class="md-header-nav__topic">
-                1. 本地环境搭建
+                1. 本地环境搭建(含入门配置)
               </span>
             
           
@@ -287,11 +287,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        1. 本地环境搭建
+        1. 本地环境搭建(含入门配置)
       </label>
     
-    <a href="./" title="1. 本地环境搭建" class="md-nav__link md-nav__link--active">
-      1. 本地环境搭建
+    <a href="./" title="1. 本地环境搭建(含入门配置)" class="md-nav__link md-nav__link--active">
+      1. 本地环境搭建(含入门配置)
     </a>
     
       
@@ -339,7 +339,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" title="添加扩展" class="md-nav__link">
+  <a href="#_5" title="添加页面" class="md-nav__link">
+    添加页面
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="添加扩展" class="md-nav__link">
     添加扩展
   </a>
   
@@ -1532,7 +1539,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" title="添加扩展" class="md-nav__link">
+  <a href="#_5" title="添加页面" class="md-nav__link">
+    添加页面
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="添加扩展" class="md-nav__link">
     添加扩展
   </a>
   
@@ -1569,7 +1583,7 @@
                   <a href="https://github.com/cyent/markdown-with-mkdocs-material/edit/master/docs/install/local.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>1. 本地环境搭建</h1>
+                  <h1>1. 本地环境搭建(含入门配置)</h1>
                 
                 <h2 id="_1"><strong>环境说明</strong><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <hr />
@@ -1626,14 +1640,28 @@
 <div class="codehilite"><pre><span></span>mkdocs new my-project
 </pre></div>
 
-<p>会生成my-project目录，进入该目录里，可以看到默认放置了一些文件，包括mkdocs.yaml，这是主配置文件</p>
+<p>会生成my-project目录，进入该目录里，可以看到默认放置了一些文件，包括mkdocs.yml，这是主配置文件</p>
 <h3 id="_4"><strong>修改主题</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>mkdocs.yml里添加:</p>
 <div class="codehilite"><pre><span></span>theme:
   name: material
 </pre></div>
 
-<h3 id="_5"><strong>添加扩展</strong><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h3 id="_5"><strong>添加页面</strong><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>mkdocs.yml里添加:</p>
+<div class="codehilite"><pre><span></span>nav:
+  - 介绍: index.md
+  - 安装:
+      - 本地环境搭建: install/local.md
+      - 发布至GitHub Pages: install/github-pages.md
+      - 发布至自己的HTTP Server: install/http-server.md
+  - 语法:
+      - 语法总览: syntax/main.md
+      - 标题: syntax/headline.md
+      - 段落: syntax/paragraph.md
+</pre></div>
+
+<h3 id="_6"><strong>添加扩展</strong><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p>mkdocs.yml里添加:</p>
 <div class="codehilite"><pre><span></span>markdown_extensions:
   - admonition
