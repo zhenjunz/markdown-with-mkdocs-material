@@ -2,16 +2,16 @@
 
 ---
 
-- python: 2.7.10
+- python: 2.7.13
 
 - 依赖的python包:
 
 	| 包名 | 模块名 | 版本 |
 	| :-- | :---- | :--  |
-	| mkdocs | mkdocs | 0.17.2 |
-	| mkdocs-material | material | 2.2.0 |
-	| Markdown | markdown | 2.6.9 |
-	| pymdown-extensions | pymdownx | 4.5 |
+	| mkdocs | mkdocs | 1.0.4 |
+	| mkdocs-material | material | 3.0.6 |
+	| Markdown | markdown | 3.0.1 |
+	| pymdown-extensions | pymdownx | 6.0 |
 
 ## **mkdocs-material部署**
 
