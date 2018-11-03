@@ -1,4 +1,4 @@
-# markdown语法详解(基于mkdocs-material) - cyent笔记
+# 基于mkdocs-material搭建个人静态博客(含支持的markdown语法)
 
 ## **本文主题**
 
